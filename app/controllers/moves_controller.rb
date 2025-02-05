@@ -1,5 +1,5 @@
 class MovesController < ApplicationController
   def rock
-    render({ :plain => "Hello, world!" })
+    render({ :template => "game_templates/play_rock" })
   end
 end
