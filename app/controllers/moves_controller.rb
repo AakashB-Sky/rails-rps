@@ -4,11 +4,11 @@ class MovesController < ApplicationController
     @comp_move = moves.sample
 
     if @comp_move == "rock"
-      @outcome == "tied"
+      @outcome = "tied"
     elsif @comp_move == "paper"
-      @outcome == "lost"
+      @outcome = "lost"
     else @comp_move == "scissors"
-      @outcome == "won"
+      @outcome = "won"
     end
     
     render({ :template => "game_templates/play_rock" })
