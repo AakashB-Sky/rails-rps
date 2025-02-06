@@ -5,5 +5,5 @@ Rails.application.routes.draw do
 
   get("/paper", { :controller => "moves", :action => "paper" })
 
-  get("scissors", { :controller => "moves", :action => "scissors" })
+  get("/scissors", { :controller => "moves", :action => "scissors" })
 end
