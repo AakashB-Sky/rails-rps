@@ -1,8 +1,6 @@
-moves = ["rock", "paper", "scissors"]
-
 class MovesController < ApplicationController  
-  
   def rock
+    moves = ["rock", "paper", "scissors"]
     @comp_move = moves.sample
 
     if @comp_move == "rock"
