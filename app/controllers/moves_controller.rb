@@ -1,7 +1,11 @@
 class MovesController < ApplicationController  
-  def rock
+  def comp_move
     moves = ["rock", "paper", "scissors"]
     @comp_move = moves.sample
+  end
+
+  def rock
+    comp_move
 
     if @comp_move == "rock"
       @outcome = "tied"
@@ -15,8 +19,7 @@ class MovesController < ApplicationController
   end
 
   def paper
-    moves = ["rock", "paper", "scissors"]
-    @comp_move = moves.sample
+    comp_move
 
     if @comp_move == "rock"
       @outcome = "won"
@@ -30,8 +33,7 @@ class MovesController < ApplicationController
   end
 
   def scissors
-    moves = ["rock", "paper", "scissors"]
-    @comp_move = moves.sample
+    comp_move
 
     if @comp_move == "rock"
       @outcome = "lost"
