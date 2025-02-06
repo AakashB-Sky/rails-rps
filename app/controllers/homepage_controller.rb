@@ -1,5 +1,5 @@
 class HomepageController < ApplicationController
-  def homepage
+  def index
     render({ :template => "homepage/index" })
   end
 end
